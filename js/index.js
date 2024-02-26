@@ -78,6 +78,8 @@ form.addEventListener("submit", function (e) {
   console.log(newPet);
 
   newPetData(newPet);
+
+  form.reset();
 });
 
 const newPetData = function (pet) {
