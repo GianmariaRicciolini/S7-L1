@@ -69,10 +69,8 @@ form.addEventListener("submit", function (e) {
   petOwner.push(newPet.ownerName);
 
   for (let i = 0; i < petOwner.length - 1; i++) {
-    if (newPet.ownerName !== petOwner[i] && (newPet.ownerName === undefined || null)) {
-      console.log(petOwner);
-    } else if (newPet.ownerName === petOwner[i]) {
-      console.log(Pet.sameOwner(newPet.ownerName, petOwner[i]));
+    if (newPet.ownerName === petOwner[i]) {
+      console.log("Il padrone ha un altro animale " + Pet.sameOwner(newPet.ownerName, petOwner[i]));
     }
   }
 
